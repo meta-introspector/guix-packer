@@ -1,0 +1,44 @@
+==> amazon-ebssurrogate: /tmp/guix-build-gcc-5.4.0.drv-0/build/./prev-gcc/xg++ -B/tmp/guix-build-gcc-5.4.0.drv-0/build/./prev-gcc/ -B/gnu/store/5sv5zy2kgg6iaqyv8zw49w4243j0xkd0-gcc-5.4.0/x86_64-unknown-linux-gnu/bin/ -nostdinc++ -B/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs -B/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/libsupc++/.libs  -I/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/include/x86_64-unknown-linux-gnu  -I/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/include  -I/tmp/guix-build-gcc-5.4.0.drv-0/gcc-5.4.0/libstdc++-v3/libsupc++ -L/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs -L/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/libsupc++/.libs   -O2 -g0 -gtoggle -DIN_GCC    -fno-exceptions -fno-rtti -fasynchronous-unwind-tables -W -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wmissing-format-attribute -Woverloaded-virtual -pedantic -Wno-long-long -Wno-variadic-macros -Wno-overlength-strings   -DHAVE_CONFIG_H -DGENERATOR_FILE -static-libstdc++ -static-libgcc  -o build/genrecog \
+==> amazon-ebssurrogate:     build/genrecog.o build/rtl.o build/read-rtl.o build/ggc-none.o build/vec.o build/min-insn-modes.o build/gensupport.o build/print-rtl.o build/read-md.o build/errors.o .././libiberty/libiberty.a
+==> amazon-ebssurrogate: build/genrecog ../../gcc-5.4.0/gcc/common.md ../../gcc-5.4.0/gcc/config/i386/i386.md \
+==> amazon-ebssurrogate:   insn-conditions.md > tmp-recog.c
+==> amazon-ebssurrogate: /gnu/store/zhrajv6qf2hzn9c3g2bb07559hyrz5xp-bash-static-4.4.12/bin/bash ../../gcc-5.4.0/gcc/../move-if-change tmp-recog.c insn-recog.c
+==> amazon-ebssurrogate: echo timestamp > s-recog
+==> amazon-ebssurrogate: /tmp/guix-build-gcc-5.4.0.drv-0/build/./prev-gcc/xg++ -B/tmp/guix-build-gcc-5.4.0.drv-0/build/./prev-gcc/ -B/gnu/store/5sv5zy2kgg6iaqyv8zw49w4243j0xkd0-gcc-5.4.0/x86_64-unknown-linux-gnu/bin/ -nostdinc++ -B/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs -B/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/libsupc++/.libs  -I/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/include/x86_64-unknown-linux-gnu  -I/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/include  -I/tmp/guix-build-gcc-5.4.0.drv-0/gcc-5.4.0/libstdc++-v3/libsupc++ -L/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/src/.libs -L/tmp/guix-build-gcc-5.4.0.drv-0/build/prev-x86_64-unknown-linux-gnu/libstdc++-v3/libsupc++/.libs -c   -O2 -g0 -gtoggle -DIN_GCC    -fno-exceptions -fno-rtti -fasynchronous-unwind-tables -W -Wall -Wno-narrowing -Wwrite-strings -Wcast-qual -Wmissing-format-attribute -Woverloaded-virtual -pedantic -Wno-long-long -Wno-variadic-macros -Wno-overlength-strings   -DHAVE_CONFIG_H -I. -I. -I../../gcc-5.4.0/gcc -I../../gcc-5.4.0/gcc/. -I../../gcc-5.4.0/gcc/../include -I../../gcc-5.4.0/gcc/../libcpp/include -I/tmp/guix-build-gcc-5.4.0.drv-0/build/./gmp -I/tmp/guix-build-gcc-5.4.0.drv-0/gcc-5.4.0/gmp -I/tmp/guix-build-gcc-5.4.0.drv-0/build/./mpfr/src -I/tmp/guix-build-gcc-5.4.0.drv-0/gcc-5.4.0/mpfr/src -I/tmp/guix-build-gcc-5.4.0.drv-0/gcc-5.4.0/mpc/src  -I../../gcc-5.4.0/gcc/../libdecnumber -I../../gcc-5.4.0/gcc/../libdecnumber/bid -I../libdecnumber -I../../gcc-5.4.0/gcc/../libbacktrace   -o insn-recog.o -MT insn-recog.o -MMD -MP -MF ./.deps/insn-recog.TPo insn-recog.c
+==> amazon-ebssurrogate: Provisioning step had errors: Running the cleanup provisioner, if present...
+==> amazon-ebssurrogate: Terminating the source AWS instance...
+==> amazon-ebssurrogate: Cleaning up any extra volumes...
+==> amazon-ebssurrogate: Destroying volume (vol-0a6d7cc467e597eda)...
+==> amazon-ebssurrogate: Error deleting volume: InvalidVolume.NotFound: The volume 'vol-0a6d7cc467e597eda' does not exist.
+==> amazon-ebssurrogate: 	status code: 400, request id: 30379a36-a15e-4742-a7ed-f8803674f920
+==> amazon-ebssurrogate: Deleting temporary security group...
+==> amazon-ebssurrogate: Deleting temporary keypair...
+Build 'amazon-ebssurrogate' errored after 5 hours 10 minutes: Script disconnected unexpectedly. If you expected your script to disconnect, i.e. from a restart, you can try adding `"expect_disconnect": true` or `"valid_exit_codes": [0, 2300218]` to the shell provisioner parameters.
+
+==> Wait completed after 5 hours 10 minutes
+
+==> Some builds didn't complete successfully and had errors:
+--> amazon-ebssurrogate: Script disconnected unexpectedly. If you expected your script to disconnect, i.e. from a restart, you can try adding `"expect_disconnect": true` or `"valid_exit_codes": [0, 2300218]` to the shell provisioner parameters.
+
+==> Builds finished but no artifacts were created.
+mdupont@mdupont-G470:~/2024/12/15/guix-packer$ amazon-ebssurrogate: output will be in this color.
+
+==> amazon-ebssurrogate: Prevalidating any provided VPC information
+==> amazon-ebssurrogate: Prevalidating AMI Name: guix-packer 1734283334
+    amazon-ebssurrogate: Found Image ID: ami-00f3c44a2de45a590
+==> amazon-ebssurrogate: Creating temporary keypair: packer_675f1047-f998-e3a2-3bed-5d07caeace98
+==> amazon-ebssurrogate: Creating temporary security group for this instance: packer_675f1047-dbbc-2a6a-f417-df2b5dcaac44
+==> amazon-ebssurrogate: VPCIdNotSpecified: No default VPC for this user
+==> amazon-ebssurrogate: 	status code: 400, request id: 3fc2be33-3fe8-4447-98bc-a04eaeba7471
+==> amazon-ebssurrogate: Deleting temporary keypair...
+Build 'amazon-ebssurrogate' errored after 1 second 316 milliseconds: VPCIdNotSpecified: No default VPC for this user
+	status code: 400, request id: 3fc2be33-3fe8-4447-98bc-a04eaeba7471
+
+==> Wait completed after 1 second 316 milliseconds
+
+==> Some builds didn't complete successfully and had errors:
+--> amazon-ebssurrogate: VPCIdNotSpecified: No default VPC for this user
+	status code: 400, request id: 3fc2be33-3fe8-4447-98bc-a04eaeba7471
+
+==> Builds finished but no artifacts were created.
+mdupont@mdupont-G470:~/2024/12/15/guix-packer$ mdupont@mdupont-G470:~/2024/12/15/guix-packer$ mdupont@mdupont-G470:~/2024/12/15/guix-packer$ 
