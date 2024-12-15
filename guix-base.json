@@ -44,7 +44,9 @@
 	"ami_virtualization_type": "hvm",
 	"access_key": "{{user `aws_access_key`}}",
 	"secret_key": "{{user `aws_secret_key`}}",
-	"region": "eu-west-1",
+	"region": "us-east-1",
+	"subnet_id":"subnet-057c90cfe7b2e5646",
+	"associate_public_ip_address": true,
 	"source_ami_filter": {
 	    "filters": {
 		"virtualization-type": "hvm",
@@ -54,8 +56,9 @@
 	    "owners": ["099720109477"],
 	    "most_recent": true
 	},
-	"instance_type": "t2.small",
+	"instance_type": "t2.medium",
 	"ssh_username": "ubuntu",
+	"vpc_id":"vpc-04f28c9347af48b55",
 	"ami_name": "guix-packer {{timestamp}}",
 	"ena_support": true,
 	"launch_block_device_mappings" : [
